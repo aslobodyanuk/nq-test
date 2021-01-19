@@ -9,7 +9,7 @@ namespace NQ.Models.Requests.Users
         [Range(1, 20)]
         public int Take { get; set; }
 
-        [Range(0, double.MaxValue)]
+        [Range(0, int.MaxValue)]
         public int Skip { get; set; }
 
         [ClassProperty(typeof(User))]
